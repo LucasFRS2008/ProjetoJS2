@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS Externo-->
+    <link rel="stylesheet" href="./src/css/estilo.css">
+    <title>Projeto Web</title>
+</head>
+<body>
+    <hearder>
+        <h1>Meus Projetos</h1>
+        <p> Os melhores projetos Devs</p>
+        <div>
+            <input type="button" class="cor" onclick="trocar('#3AE8B1')">
+            <input type="button" class="cor" onclick="trocar('#C13AF2')">
+            <input type="button" class="cor" onclick="trocar('#FBFF24')">
+        </div>
+    </hearder>
+    <main>
+       <button onclick="cardProdutos(produtos)">Mostrar Todos (Map)</button> 
+       <button onclick="filtrarPromocoes()">Apenas Promoçoes(Filter) </button>
+       <button onclick="calcularTotal()">Cacular Total(Reduce)</button>
+
+       <div class="lista-produtos" id="grid"></div>
+       <h2 id="resultado-total"></h2>
+    </main>
+    <footer>
+        <p>&copy;-2026- Todos os direitos reservados</p>
+    </footer>
+    <!--JS externo--> 
+    <script src="./src/js/script.js"></script>
+</body>
+</html>
